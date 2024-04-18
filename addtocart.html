@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="addtocart.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+
+
+
+    <script src="addtocart.js" defer></script>
+    
+</head>
+<body>
+    <div class="header">
+        <p class="logo" ><img src="image/logo.png " alt="logo.png" width="250" height="150" ></p>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>ตะกร้าสินค้า</p></div>
+            <div id="cartItem">สินค้าในตะกร้า</div>
+            <div class="foot">
+                <h3>ยอดรวม(ดอลล่า)</h3>
+                <ba/>
+                <h2 id="total">$ 0.00</h2>
+                <br/>
+                <button class="btn" onclick='checkoutQrcode()'>ชำระเงิน</button>
+                <button class="btn w-28 bg-[#94907a] text-white rounded-full" onclick="printPDF()">
+                    ใบเสร็จ
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
